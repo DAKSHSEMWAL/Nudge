@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Common
 
 @main
 struct NudgeApp: App {
@@ -13,5 +14,16 @@ struct NudgeApp: App {
         WindowGroup {
             ContentView()
         }
+    }
+}
+
+struct ComposeView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> some UIViewController {
+        // File name "Main" + "Kt" -> "Function Name"
+        return MainViewControllerKt.MainViewController()
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+        
     }
 }
