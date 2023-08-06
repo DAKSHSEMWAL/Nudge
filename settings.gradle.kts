@@ -14,4 +14,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Nudge"
-include(":app")
+include(":androidApp")
+include(":common")
+include(":desktopApp")
